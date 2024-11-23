@@ -6,6 +6,36 @@
 /* ---------------------------------------------
   Custom Colors
 --------------------------------------------- */
+
+.tag{
+  font-family: "Cabin", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.3px;
+  align-self: center;
+  color: #0F0F78;
+}
+
+.heading{
+  font-family: "Cabin", serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.75px;
+  align-self: center;
+  color: #0F0F0F;
+}
+
+.btn {
+  font-family: "Cabin", serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.87px;
+  padding: 14px 35px;
+  border-radius: 10px;
+  color: white;
+  background: #0F0F78;
+}
+
 .bg-light-grey {
   background-color: #EBEBEB;
 }
@@ -164,4 +194,66 @@
 
 .info-links ul li a:hover {
   color: #0F0F78; /* Hover effect */
+}
+
+
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+.testimonial-card {
+  flex: 0 0 70%;
+  max-width: 70%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.6;
+  transform: scale(0.9);
+}
+.testimonial-active {
+  flex: 0 0 100%;
+  max-width: 100%;
+  transform: scale(1);
+  opacity: 1;
+}
+.navigation-buttons {
+  position: absolute;
+  bottom: -4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+/* Seventh */
+
+.card-hover:hover h3 {
+  color: #0F0F78;
+  font-weight: 700;
+}
+.card-hover:hover a {
+  color: #0F0F78;
+  font-weight: 800;
+}
+
+.card-hover:hover svg {
+  fill: #0F0F78;
+}
+
+.angled-line {
+  position: absolute;
+  height: 2px;
+  background-color: #e5e7eb;
+}
+
+.hover-effect {
+  transition: all 0.3s ease-in-out;
+}
+.hover-effect:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.hover-effect:hover .text-overlay {
+  opacity: 1;
 }
