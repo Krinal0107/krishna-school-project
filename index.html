@@ -11,6 +11,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body class="w-full max-w-[1920px] mx-auto">
+    <!-- Header  -->
+    <header class="sticky top-0 bg-white z-50 flex items-center justify-between h-[80px] px-[100px] shadow-md">
+        <!-- Logo Section -->
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo" class="w-[150px] h-auto">
+        </div>
+      
+        <!-- Navigation Section -->
+        <nav>
+          <ul class="flex list-none m-0 p-0 gap-[30px]">
+            <li><a href="/" class="nav-item active text-[22px] font-semibold">Home</a></li>
+            <li><a href="/about.html" class="nav-item text-[22px]">About Us</a></li>
+            <li><a href="/management.html" class="nav-item text-[22px]">Management</a></li>
+            <li><a href="/admission.html" class="nav-item text-[22px]">Admission</a></li>
+            <li><a href="/blogs.html" class="nav-item text-[22px]">Blog</a></li>
+            <li><a href="/gallery.html" class="nav-item text-[22px]">Gallery</a></li>
+            <li><a href="/contact-us.html" class="nav-item text-[22px]">Contact Us</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Button Section -->
+        <a href="/contact-us.html">
+            <button class="action-button px-[35px] py-[14px] bg-[#0F0F78] text-white font-[Cabin] text-[18px] font-bold rounded-[10px] hover:bg-[#1a1aa8] transition-colors duration-300">
+            Get A Quote
+            </button>
+        </a>
+      </header>
+
     <div class="relative bg-cover p-8 h-[800px] bg-no-repeat flex items-center "
        style="background-image: url('./assets/Hero.png');">
     
@@ -27,12 +55,16 @@
         education is electronically supported learning that  relies on the Internet for teacher/student interaction and  the distribution of class materials.” and  the distribution of class materials
       </p>
       <div class="mt-8 flex gap-4">
-        <button class="bg-blue-800 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
-          Get A Quote
-        </button>
-        <button class="bg-white text-blue-800 border border-blue-800 px-6 py-3 rounded-lg shadow hover:bg-blue-100">
-          Learn More
-        </button>
+        <a href="/contact-us.html">
+            <button class="bg-blue-800 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+            Get A Quote
+            </button>
+        </a>
+        <a href="/about.html">
+            <button class="bg-white text-blue-800 border border-blue-800 px-6 py-3 rounded-lg shadow hover:bg-blue-100">
+            Learn More
+            </button>
+        </a>
       </div>
     </div>
   </div>
@@ -66,9 +98,11 @@
             <p class="text-gray-700 mt-4 leading-relaxed" style="font-family: Nunito, sans-serif;">
                 The educational approach at Krishna School Sankul is unique. Rather than structuring the learning around a strict curriculum, our educators focus on trying to create learning experiences that prepare students to be happy, balanced, productive, and innovative citizens of tomorrow.
             </p>
-            <button class="bg-[#0F0F78] text-white mt-6 px-[35px] py-[14px] rounded-[10px] shadow-lg hover:bg-blue-900 font-bold text-[18px] leading-[21.87px]" style="font-family: Cabin, sans-serif;">
-                Learn More
-            </button>
+            <a href="/about.html">
+                <button class="bg-[#0F0F78] text-white mt-6 px-[35px] py-[14px] rounded-[10px] shadow-lg hover:bg-blue-900 font-bold text-[18px] leading-[21.87px]" style="font-family: Cabin, sans-serif;">
+                    Learn More
+                </button>
+            </a>
         </div>
     </div>
 </section>
@@ -99,7 +133,7 @@
             <p class="text-gray-700 mt-4">
               The blooming buds walk in Krishna School Sankul, and they are playfully led beyond the books. The student-centric approach caters to 5 major developmental areas of the blooming buds...
             </p>
-            <a href="#" class="text-[#595959] font-semibold text-[18px] leading-[24.55px] group-hover:text-[#0F0F78] group-hover:font-extrabold mt-4 inline-flex items-center">
+            <a href="/pre-primary.html" class="text-[#595959] font-semibold text-[18px] leading-[24.55px] group-hover:text-[#0F0F78] group-hover:font-extrabold mt-4 inline-flex items-center">
               Read More <span class="ml-1">&rarr;</span>
             </a>
           </div>
@@ -115,7 +149,7 @@
             <p class="text-gray-700 mt-4">
               Primary section curriculum is dependent on our commitment to our particular belief about how children learn, encapsulated most clearly in the constructive approach. Using their prior...
             </p>
-            <a href="#" class="text-[#595959] font-semibold text-[18px] leading-[24.55px] group-hover:text-[#0F0F78] group-hover:font-extrabold mt-4 inline-flex items-center">
+            <a href="/pre-primary.html" class="text-[#595959] font-semibold text-[18px] leading-[24.55px] group-hover:text-[#0F0F78] group-hover:font-extrabold mt-4 inline-flex items-center">
               Read More <span class="ml-1">&rarr;</span>
             </a>
           </div>
@@ -131,7 +165,7 @@
             <p class="text-gray-700 mt-4">
               Krishna School Sankul is dedicated to providing holistic learning and molding children into independent individuals. We strive to explore and enhance their physical competence...
             </p>
-            <a href="#" class="text-[#595959] font-semibold text-[18px] leading-[24.55px] group-hover:text-[#0F0F78] group-hover:font-extrabold mt-4 inline-flex items-center">
+            <a href="/pre-primary.html" class="text-[#595959] font-semibold text-[18px] leading-[24.55px] group-hover:text-[#0F0F78] group-hover:font-extrabold mt-4 inline-flex items-center">
               Read More <span class="ml-1">&rarr;</span>
             </a>
           </div>
@@ -235,7 +269,7 @@
 
   <!-- Fifth  -->
 
-  <section class="bg-gray-50 py-16">
+  <section class="py-16">
     <div class="max-w-7xl mx-auto px-6">
       <!-- Section Title -->
       <div class="text-center mb-12" style="font-family: Cabin, sans-serif;">
@@ -466,9 +500,11 @@
 
       <!-- View More Button -->
       <div class="text-center mt-12" >
+        <a href="/gallery.html">
         <button class="bg-[#0F0F78] text-white px-[35px] py-[14px] rounded-[10px] text-[18px] font-bold shadow-lg hover:bg-blue-900" style="font-family: Cabin, sans-serif;">
           View More
         </button>
+        </a>
       </div>
     </div>
   </section>
@@ -581,9 +617,11 @@
 
       <!-- View More Button -->
       <div class="text-center mt-12">
-        <button class="bg-[#0F0F78] text-white px-[35px] py-[14px] rounded-[10px] text-[18px] font-semibold leading-[21.87px] shadow-lg hover:bg-blue-900">
-          View More
-        </button>
+        <a href="/blogs.html">
+            <button class="bg-[#0F0F78] text-white px-[35px] py-[14px] rounded-[10px] text-[18px] font-semibold leading-[21.87px] shadow-lg hover:bg-blue-900">
+            View More
+            </button>
+        </a>
       </div>
     </div>
   </section>
@@ -600,9 +638,11 @@
         <p class="text-gray-300 mt-4" style="font-family: Nunito, sans-serif;">
             t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-
         </p>
-        <button class="mt-6 px-[35px] py-[14px] border border-white text-white font-bold text-[18px] rounded-lg hover:bg-white hover:text-gray-900 transition">
-          Contact Us
-        </button>
+        <a href="contact-us.html">
+            <button class="mt-6 px-[35px] py-[14px] border border-white text-white font-bold text-[18px] rounded-lg hover:bg-white hover:text-gray-900 transition">
+            Contact Us
+            </button>
+        </a>
     </div>
     <div>
         <img src="assets/banner-student.png" class="w-[400px] h-[450px] z-2 relative top-[-174px]" />
@@ -612,6 +652,85 @@
       
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#EBEBEB] py-10 px-[100px]">
+
+    <!-- Wrapper -->
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:gap-10">
+      
+      <!-- Intro Section -->
+      <div class="flex-1 mb-10 lg:mb-0 w-full lg:w-[30%]">
+        <img src="assets/logo.png" alt="Logo" class="w-32 h-auto mb-5 footer-logo">
+        <p class="text-gray-700 mb-5">
+          Welcome to our platform, where we bring you the best tools for your business growth and seamless customer interaction.
+        </p>
+        <div class="flex">
+          <a href="#">
+            <img src="assets/googleplay.png" alt="Download on Play Store" class="w-32 h-auto">
+          </a>
+          <a href="#">
+            <img src="assets/appstore.png" alt="Download on App Store" class="w-32 h-auto">
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Section -->
+      <div class=" flex flex-col lg:flex-row lg:gap-10 w-full lg:w-[70%]">
+        <!-- Company Info -->
+        <div class="w-[250px] mb-5 lg:mb-0">
+          <h3 class="font-bold text-lg mb-3">Company Info</h3>
+          <ul class="space-y-2">
+            <li><a href="/about.html" class="">About</a></li>
+            <li><a href="/management.html" class="">Careers</a></li>
+            <li><a href="/management.html" class="">We are Hiring</a></li>
+            <li><a href="/blogs.html" class="">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="w-[250px] mb-5 lg:mb-0">
+          <h3 class="font-bold text-lg mb-3">Legal</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="">Terms of Service</a></li>
+            <li><a href="#" class="">Privacy Policy</a></li>
+            <li><a href="#" class="">Refund Policy</a></li>
+            <li><a href="#" class="">License</a></li>
+          </ul>
+        </div>
+
+        <!-- Features -->
+        <div class="w-[250px] mb-5 lg:mb-0">
+          <h3 class="font-bold text-lg mb-3">Features</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="">Business Marketing</a></li>
+            <li><a href="#" class="">User Analytics</a></li>
+            <li><a href="#" class="">Live Chat</a></li>
+            <li><a href="#" class="">Unlimited Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          
+          <ul class="space-y-2">
+            <li class="flex gap-3">
+              <img src="assets/location_icon.png" alt="Location Icon" class="self-start w-5 h-5">
+              <span class="">Krishna School Sankul,Radheshyam Soc., Opp.Sitanagar Chowk, Punagam-Bombay Market Road, Surat-395010 Gujrat</span>
+            </li>
+            <li class="flex gap-3">
+              <img src="assets/mail_icon.png" alt="Email Icon" class="self-start w-5 h-5">
+              <a href="mailto:krishna_school_sankool@yahoo.co.in" class="">krishna_school_sankool@yahoo.co.in</a>
+            </li>
+            <li class="flex gap-3">
+              <img src="assets/phone_icon.png" alt="Phone Icon" class="self-start w-5 h-5">
+              <a href="tel:+919099071999" class="">+91 909 9071 999</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
