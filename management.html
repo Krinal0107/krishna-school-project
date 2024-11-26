@@ -12,32 +12,57 @@
 </head>
 <body class="w-full max-w-[1920px] mx-auto">
     <!-- Header  -->
-    <header class="sticky top-0 bg-white z-50 flex items-center justify-between h-[80px] px-[100px] shadow-md">
-        <!-- Logo Section -->
-        <div class="logo">
+    <header class="sticky top-0 bg-white z-50 flex items-center justify-between h-[80px] px-4 sm:px-8 lg:px-[100px] shadow-md">
+      <!-- Logo Section -->
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" class="w-[120px] sm:w-[150px] h-auto">
+      </div>
+    
+      <!-- Hamburger Icon for Mobile -->
+      <button id="menu-toggle" class="lg:hidden text-2xl">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+          <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+          </svg>
+      </button>
+    
+      <!-- Sidebar Menu -->
+      <nav
+        id="menu"
+        class="fixed top-0 left-0 h-full w-[300px] bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg flex flex-col items-start p-6"
+      >
+        <!-- Close Button -->
+        <button id="menu-close" class="self-end text-2xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+    
+        <!-- Logo Inside Sidebar -->
+        <div class="logo mt-6">
           <img src="assets/logo.png" alt="Logo" class="w-[150px] h-auto">
         </div>
-      
-        <!-- Navigation Section -->
-        <nav>
-          <ul class="flex list-none m-0 p-0 gap-[30px]">
-            <li><a href="/" class="nav-item active text-[22px] font-semibold">Home</a></li>
-            <li><a href="/about.html" class="nav-item text-[22px]">About Us</a></li>
-            <li><a href="/management.html" class="nav-item text-[22px]">Management</a></li>
-            <li><a href="/admission.html" class="nav-item text-[22px]">Admission</a></li>
-            <li><a href="/blogs.html" class="nav-item text-[22px]">Blog</a></li>
-            <li><a href="/gallery.html" class="nav-item text-[22px]">Gallery</a></li>
-            <li><a href="/contact-us.html" class="nav-item text-[22px]">Contact Us</a></li>
-          </ul>
-        </nav>
-      
-        <!-- Button Section -->
-        <a href="/contact-us.html">
-        <button class="action-button px-[35px] py-[14px] bg-[#0F0F78] text-white font-[Cabin] text-[18px] font-bold rounded-[10px] hover:bg-[#1a1aa8] transition-colors duration-300">
-          Get A Quote
-        </button>
+    
+        <!-- Navigation Links -->
+        <ul class="flex flex-col gap-4 mt-8 text-left w-full">
+          <li><a href="/" class="nav-item text-lg font-medium hover:text-blue-600">Home</a></li>
+          <li><a href="/about.html" class="nav-item text-lg font-medium hover:text-blue-600">About Us</a></li>
+          <li><a href="/management.html" class="nav-item text-lg font-medium hover:text-blue-600">Management</a></li>
+          <li><a href="/admission.html" class="nav-item text-lg font-medium hover:text-blue-600">Admission</a></li>
+          <li><a href="/blogs.html" class="nav-item text-lg font-medium hover:text-blue-600">Blog</a></li>
+          <li><a href="/gallery.html" class="nav-item text-lg font-medium hover:text-blue-600">Gallery</a></li>
+          <li><a href="/contact-us.html" class="nav-item text-lg font-medium hover:text-blue-600">Contact Us</a></li>
+        </ul>
+    
+        <!-- Get a Quote Button -->
+        <a href="/contact-us.html" class="mt-auto w-full">
+          <button
+            class="w-full py-2 bg-[#0F0F78] text-white font-bold rounded hover:bg-[#1a1aa8] transition-colors duration-300"
+          >
+            Get A Quote
+          </button>
         </a>
-      </header>
+      </nav>
+    </header>
 
     <!-- Hero - First  -->
     <section class="relative lg:h-full bg-[#DDF4FF]">
@@ -73,14 +98,14 @@
           <!-- Content Section -->
           <div class="flex flex-col lg:flex-row items-center justify-center">
             <!-- Left Column: Image -->
-            <div class="w-full lg:w-auto flex justify-center relative left-[94px] z-10">
+            <div class="w-full lg:w-auto flex justify-center relative lg:left-[94px] z-10">
               <div class="rounded-full overflow-hidden shadow-lg w-[400px] h-[400px]">
                 <img src="./assets/trustee.png" alt="Trustee" class="w-full h-full object-cover">
               </div>
             </div>
             
             <!-- Right Column: Message -->
-            <div class="w-full lg:w-2/3 bg-white shadow-lg rounded-lg p-8 relative pl-[120px] z-0" style="font-family: Nunito, sans-serif;">
+            <div class="w-full lg:w-2/3 bg-white shadow-lg rounded-lg p-8 relative lg:pl-[120px] z-0" style="font-family: Nunito, sans-serif;">
               <div class="absolute top-0 right-0 w-12 h-12 border-t-4 border-r-4 border-blue-600 rounded-tr-lg"></div>
               <p class="text-[#595959] font-normal text-[18px] leading-[28px]">
                 Education is very important to all of us as it plays very important roles in our life. In order to live a better and peaceful life, we need to be educated. It transforms us completely from inside and outside by changing our mind and personality as well as improving our confidence level. It changes our life completely as it is constructive in nature. It helps a person to get knowledge and improve confidence level all through the life.
@@ -109,8 +134,8 @@
             <!-- Right Column: Profile Details -->
             <div class="w-full lg:w-2/3">
               <!-- Section Title -->
-              <div class="mb-6">
-                <div class="flex items-center">
+              <div class="mb-6 text-center lg:text-start">
+                <div class="flex items-center justify-center lg:justify-start">
                 <h3 class="tag">Principal Desk</h3>
                 <div class="inline-block ml-2 w-16 h-[2px] bg-[#0F0F78]"></div>
             </div>
