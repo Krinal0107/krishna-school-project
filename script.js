@@ -1,14 +1,16 @@
 const menuToggle = document.getElementById("menu-toggle");
-  const menuClose = document.getElementById("menu-close");
-  const menu = document.getElementById("menu");
+const menuClose = document.getElementById("menu-close");
+const menu = document.getElementById("menu");
 
-  menuToggle.addEventListener("click", () => {
-    menu.classList.remove("-translate-x-full");
-  });
+menuToggle.addEventListener("click", () => {
+  menu.classList.remove("-translate-x-full");
+});
 
-  menuClose.addEventListener("click", () => {
-    menu.classList.add("-translate-x-full");
-  });
+menuClose.addEventListener("click", () => {
+  menu.classList.add("-translate-x-full");
+});
+
+
 function toggleAccordion(id) {
   const allContents = document.querySelectorAll("[id^='content-']");
   const allButtons = document.querySelectorAll("[id^='button-']");
