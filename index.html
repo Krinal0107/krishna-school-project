@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body class="w-full max-w-[1920px] mx-auto">
     <!-- Header  -->
@@ -447,41 +450,35 @@
       <!-- Testimonials Slider -->
       <div class="relative w-full overflow-hidden">
         <!-- Slider -->
-        <div id="testimonial-slider" class="flex transition-all duration-500 justify-center">
-          <!-- Testimonial Cards -->
-          <div class="testimonial-card bg-white rounded-xl shadow-xl p-8 mx-4 flex flex-col items-center text-center opacity-50 transform scale-90 transition-all duration-500">
-            <img src="./assets/person1.png" alt="Freddy" class="rounded-full w-20 h-20 mb-4 object-cover">
-            <p class="text-gray-700 italic mb-4">
-              "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            </p>
-            <h3 class="text-gray-900 font-bold text-lg">Freddy</h3>
-            <p class="text-gray-500 text-sm">FOUNDER AND CEO</p>
-          </div>
-          <div class="testimonial-card bg-white rounded-xl shadow-xl p-8 mx-4 flex flex-col items-center text-center opacity-100 transform scale-100 transition-all duration-500">
-            <img src="./assets/person2.png" alt="Karmani" class="rounded-full w-20 h-20 mb-4 object-cover">
-            <p class="text-gray-700 italic mb-4">
-              "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            </p>
-            <h3 class="text-gray-900 font-bold text-lg">Karmani</h3>
-            <p class="text-gray-500 text-sm">FOUNDER AND CEO</p>
-          </div>
-          <div class="testimonial-card bg-white rounded-xl shadow-xl p-8 mx-4 flex flex-col items-center text-center opacity-50 transform scale-90 transition-all duration-500">
-            <img src="./assets/person3.png" alt="Minda" class="rounded-full w-20 h-20 mb-4 object-cover">
-            <p class="text-gray-700 italic mb-4">
-              "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            </p>
-            <h3 class="text-gray-900 font-bold text-lg">Minda</h3>
-            <p class="text-gray-500 text-sm">FOUNDER AND CEO</p>
-          </div>
-          <div class="testimonial-card bg-white rounded-xl shadow-xl p-8 mx-4 flex flex-col items-center text-center opacity-50 transform scale-90 transition-all duration-500">
-            <img src="./assets/person4.png" alt="Alex" class="rounded-full w-20 h-20 mb-4 object-cover">
-            <p class="text-gray-700 italic mb-4">
-              "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-            </p>
-            <h3 class="text-gray-900 font-bold text-lg">Alex</h3>
-            <p class="text-gray-500 text-sm">FOUNDER AND CEO</p>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white rounded-xl shadow-xl p-8 mx-4 flex flex-col items-center text-center">
+              <img src="./assets/Ellipse 2 (1).png" alt="Freddy" class="rounded-full w-20 h-20 mb-4 object-cover">
+              <p class="text-gray-700 italic mb-4">"Lorem Ipsum..."</p>
+              <h3 class="text-gray-900 font-bold text-lg">Freddy</h3>
+              <p class="text-gray-500 text-sm">FOUNDER AND CEO</p>
+            </div>
+            <div class="swiper-slide bg-white rounded-xl shadow-xl p-8 mx-4 flex flex-col items-center text-center">
+              <img src="./assets/Ellipse 2 (2).png" alt="Karmani" class="rounded-full w-20 h-20 mb-4 object-cover">
+              <p class="text-gray-700 italic mb-4">"Lorem Ipsum..."</p>
+              <h3 class="text-gray-900 font-bold text-lg">Karmani</h3>
+              <p class="text-gray-500 text-sm">FOUNDER AND CEO</p>
+            </div>
+            <div class="swiper-slide bg-white rounded-xl shadow-xl p-8 mx-4 flex flex-col items-center text-center">
+              <img src="./assets/Ellipse 2.png" alt="Minda" class="rounded-full w-20 h-20 mb-4 object-cover">
+              <p class="text-gray-700 italic mb-4">"Lorem Ipsum..."</p>
+              <h3 class="text-gray-900 font-bold text-lg">Minda</h3>
+              <p class="text-gray-500 text-sm">FOUNDER AND CEO</p>
+            </div>
+            <div class="swiper-slide bg-white rounded-xl shadow-xl p-8 mx-4 flex flex-col items-center text-center">
+              <img src="./assets/Ellipse 2 (2).png" alt="Karmani" class="rounded-full w-20 h-20 mb-4 object-cover">
+              <p class="text-gray-700 italic mb-4">"Lorem Ipsum..."</p>
+              <h3 class="text-gray-900 font-bold text-lg">Karmani</h3>
+              <p class="text-gray-500 text-sm">FOUNDER AND CEO</p>
+            </div>
           </div>
         </div>
+        
 
         <!-- Navigation Buttons -->
         <div class="relative inset-x-0 bottom-0 flex justify-center gap-6 mt-8">
@@ -776,5 +773,18 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true, // Infinite loop
+      slidesPerView: 3, // Show one slide at a time
+      spaceBetween: 30, // Spacing between slides
+      autoplay: {
+        delay: 3000, // 3 seconds per slide
+      },
+      centeredSlides: true, // Center active slide
+      effect: 'slide', // Sliding transition
+    });
+  </script>
+  
 </body>
 </html>
