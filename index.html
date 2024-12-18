@@ -776,15 +776,31 @@
   <script>
     const swiper = new Swiper('.swiper-container', {
       loop: true, // Infinite loop
-      slidesPerView: 3, // Show one slide at a time
       spaceBetween: 30, // Spacing between slides
       autoplay: {
         delay: 3000, // 3 seconds per slide
       },
       centeredSlides: true, // Center active slide
       effect: 'slide', // Sliding transition
+
+      // Responsive settings using breakpoints
+      breakpoints: {
+        320: { // For small screens
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: { // For tablets
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: { // For desktops
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
     });
-  </script>
+</script>
+
   
 </body>
 </html>
