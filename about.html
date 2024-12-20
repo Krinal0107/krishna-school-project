@@ -86,7 +86,7 @@
 
     <!-- Hero - First  -->
     <section class="relative lg:h-full bg-[#DDF4FF]">
-        <div class="max-w-7xl mx-auto  flex flex-col-reverse lg:flex-row items-center gap-8">
+        <div class="max-w-7xl mx-auto  pt-8 pl-4 block lg:flex flex-col-reverse lg:flex-row items-center gap-8">
           <!-- Left Section: Text -->
           <div class="lg:w-1/2 sm:pl-8" style="font-family: Cabin, sans-serif;">
             <!-- <h3 class="text-[#7C89B1] font-medium text-lg">About Us</h3> -->
@@ -108,21 +108,21 @@
         <div class="flex flex-col lg:flex-row items-center gap-8 max-w-7xl mx-auto">
             
             <!-- Left Side - Image and Stats -->
-            <div class="relative w-full lg:w-1/2">
+            <div class="relative w-full lg:w-1/2 hidden lg:block">
                 <!-- Main Image -->
                 <img src="./assets/about-desc.png" alt="Student" class="rounded-lg w-[550px] m-auto">
                
             </div>
     
             <!-- Right Side - Content -->
-            <div class="w-full lg:w-1/2 text-center lg:text-left">
-                <div class="flex items-center justify-center lg:justify-start gap-2">
+            <div class="w-full lg:w-1/2">
+                <div class="flex items-center  lg:justify-start gap-2">
                     
                     <h3 class="text-[20px] leading-[24.3px] font-bold text-[#0F0F78]" style="font-family: Cabin, sans-serif;">Who We Are ?</h3>
                     <div class="h-[2px] w-16 bg-[#0F0F78]"></div>
                   </div>
                 
-                <h2 class="text-[50px] leading-[60.75px] font-bold text-[#0F0F0F]" style="font-family: Cabin, sans-serif;">
+                <h2 class="text-[5vw] lg:text-[3vw] leading-[60.75px] font-bold text-[#0F0F0F]" style="font-family: Cabin, sans-serif;">
                     Let us tell you about Krishna School
                 </h2>
                 <p class="text-gray-700 mt-4 leading-relaxed" style="font-family: Nunito, sans-serif;">
@@ -136,6 +136,11 @@
                 </p>
                 
             </div>
+            <div class="relative w-full lg:w-1/2 block lg:hidden">
+              <!-- Main Image -->
+              <img src="./assets/about-desc.png" alt="Student" class="rounded-lg w-[550px] m-auto">             
+          </div>
+  
         </div>
     </section>
 
@@ -153,14 +158,14 @@
           </div>
     
           <!-- Mission Section -->
-          <div class="relative bg-white shadow-lg rounded-lg mb-12">
+          <div class="relative bg-white shadow-lg rounded-lg mb-12 mt-24 lg:mt-20">
             <!-- Mission Banner -->
-            <div class="absolute -left-10 top-0 z-0">
+            <div class="absolute -left-10 -top-20 z-0 lg:-top-[8vh]">
               <img src="./assets/our-mission.png" alt="Mission Banner" class="w-[200px] lg:w-[287px]">
             </div>
           
             <!-- Mission Content -->
-            <div class="relative p-8 pl-[15%] z-10">
+            <div class="relative p-8 lg:pl-[15%] z-10">
               <p class="text-black">
                 We at Krishna School Sankul, Surat, have a mission to create individuals who are confident about their potential and are sensitive to their environment and above all, co-creators of their own destiny. Our aim is to help a child realize his/her inner strength and give him a conducive environment to grow and evolve as a good social being and a global citizen. Our Mission is to blend high-value deliveries with modern learning tools to ensure that each of the institution has a safe, healthy, positively energizing, intellectually challenging, learning...
               </p>
@@ -171,14 +176,14 @@
 
 
           <!-- Vission Section -->
-          <div class="relative bg-white shadow-lg rounded-lg mb-12">
+          <div class="relative bg-white shadow-lg rounded-lg mb-12 mt-24 lg:mt-20">
             <!-- Vission Banner -->
-            <div class="absolute -right-10 top-0 z-0">
+            <div class="absolute -right-10  -top-20 lg:-top-[8vh] z-0">
               <img src="./assets/our-vision.png" alt="Vission Banner" class="w-[200px] lg:w-[287px]">
             </div>
           
             <!-- Vission Content -->
-            <div class="relative p-8 pr-[15%] z-10">
+            <div class="relative p-8 lg:pr-[15%] z-10">
               <p class="text-black">
                 The growth and development of the child can be maximized only if there is a healthy collaboration between the school and the parents, as the dictum goes that "A parent is the first teacher and a teacher is the second parent". We endeavor to develop a more persistent and continual mechanism to obtain parents' response. Our Vision is to be a premier global educational institution which develops the human resource for our dynamic and expanding community, the state, the nation, the region, and the world at large.
               </p>
@@ -201,7 +206,7 @@
           </div>
     
           <!-- Activity Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Activity Item -->
             <div class="relative rounded-lg overflow-hidden group hover-effect">
               <img src="./assets/activity-1.png" alt="Activity 1" class="w-full h-full object-cover">
@@ -345,7 +350,7 @@
             </div>
     
             <!-- Staff Card 2 -->
-            <div class="relative rounded-lg overflow-hidden flex flex-col items-center p-6 text-center">
+            <div class="relative rounded-lg overflow-hidden flex flex-col items-center p-6 text-center hidden lg:block">
               <div class="relative rounded-full overflow-hidden w-36 h-36">
                 <img src="./assets/staff-2.png" alt="Staff 2" class="w-full h-full object-cover">
                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition">
@@ -359,7 +364,7 @@
             </div>
     
             <!-- Staff Card 3 -->
-            <div class="relative rounded-lg overflow-hidden flex flex-col items-center p-6 text-center">
+            <div class="relative rounded-lg overflow-hidden flex flex-col items-center p-6 text-center hidden lg:block">
               <div class="relative rounded-full overflow-hidden w-36 h-36">
                 <img src="./assets/staff-3.png" alt="Staff 3" class="w-full h-full object-cover">
                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition">
@@ -373,7 +378,7 @@
             </div>
     
             <!-- Staff Card 4 -->
-            <div class="relative rounded-lg overflow-hidden flex flex-col items-center p-6 text-center">
+            <div class="relative rounded-lg overflow-hidden flex flex-col items-center p-6 text-center hidden lg:block">
               <div class="relative rounded-full overflow-hidden w-36 h-36">
                 <img src="./assets/staff-4.png" alt="Staff 4" class="w-full h-full object-cover">
                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition">
@@ -406,12 +411,12 @@
     <div class="flex flex-col lg:flex-row lg:justify-between lg:gap-10">
       
       <!-- Intro Section -->
-      <div class="flex-1 mb-10 lg:mb-0 w-full lg:w-[30%]">
+      <div class="flex flex-col items-center lg:items-start mb-10 lg:mb-0 lg:w-[30%] text-center lg:text-left">
         <img src="assets/logo.png" alt="Logo" class="w-32 h-auto mb-5 footer-logo">
         <p class="text-gray-700 mb-5">
           Welcome to our platform, where we bring you the best tools for your business growth and seamless customer interaction.
         </p>
-        <div class="flex">
+        <div class="flex gap-4">
           <a href="#">
             <img src="assets/googleplay.png" alt="Download on Play Store" class="w-32 h-auto">
           </a>
@@ -422,9 +427,9 @@
       </div>
 
       <!-- Links Section -->
-      <div class=" flex flex-col lg:flex-row lg:gap-10 w-full lg:w-[70%]">
+      <div class=" flex flex-row lg:flex-row lg:gap-10 w-full lg:w-[70%] w-full">
         <!-- Company Info -->
-        <div class="w-[250px] mb-5 lg:mb-0">
+        <div class="w-full mb-5 lg:mb-0">
           <h3 class="font-bold text-lg mb-3">Company Info</h3>
           <ul class="space-y-2">
             <li><a href="/about.html" class="">About</a></li>
@@ -435,7 +440,7 @@
         </div>
 
         <!-- Legal -->
-        <div class="w-[250px] mb-5 lg:mb-0">
+        <div class="w-full mb-5 lg:mb-0">
           <h3 class="font-bold text-lg mb-3">Legal</h3>
           <ul class="space-y-2">
             <li><a href="#" class="">Terms of Service</a></li>
@@ -446,7 +451,7 @@
         </div>
 
         <!-- Features -->
-        <div class="w-[250px] mb-5 lg:mb-0">
+        <div class="w-full mb-5 lg:mb-0">
           <h3 class="font-bold text-lg mb-3">Features</h3>
           <ul class="space-y-2">
             <li><a href="#" class="">Business Marketing</a></li>
@@ -457,8 +462,7 @@
         </div>
 
         <!-- Contact -->
-        <div>
-          
+        <div class="w-full hidden lg:flex">          
           <ul class="space-y-2">
             <li class="flex gap-3">
               <img src="assets/location_icon.png" alt="Location Icon" class="self-start w-5 h-5">
@@ -475,6 +479,24 @@
           </ul>
         </div>
       </div>
+
+      <div class="w-full lg:hidden">          
+        <ul class="space-y-2">
+          <li class="flex gap-3">
+            <img src="assets/location_icon.png" alt="Location Icon" class="self-start w-5 h-5">
+            <span class="">Krishna School Sankul,Radheshyam Soc., Opp.Sitanagar Chowk, Punagam-Bombay Market Road, Surat-395010 Gujrat</span>
+          </li>
+          <li class="flex gap-3">
+            <img src="assets/mail_icon.png" alt="Email Icon" class="self-start w-5 h-5">
+            <a href="mailto:krishna_school_sankool@yahoo.co.in" class="">krishna_school_sankool@yahoo.co.in</a>
+          </li>
+          <li class="flex gap-3">
+            <img src="assets/phone_icon.png" alt="Phone Icon" class="self-start w-5 h-5">
+            <a href="tel:+919099071999" class="">+91 909 9071 999</a>
+          </li>
+        </ul>
+      </div>
+
       </div>
   </footer>
 
