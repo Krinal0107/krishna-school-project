@@ -144,3 +144,21 @@
 .footer-logo{
   align-items: hidden;
 }
+
+.swiper-wrapper {
+  transition: transform 0.5s ease-in-out;
+}
+
+.swiper-slide {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.swiper-slide-opacity {
+  opacity: 0.5 !important;
+  transform: scale(0.9) !important;
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
