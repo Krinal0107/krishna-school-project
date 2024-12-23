@@ -1,0 +1,72 @@
+ <header class=" sticky top-0 bg-white z-50 flex items-center justify-between lg:justify-center h-[80px] px-4 lg:px-8 xl:px-16 shadow-md ">
+      <div class="lg:max-w-[1920px] max-w-[1920px] lg:flex lg:justify-center lg:items-center    justify-between items-center flex gap-[68vw] lg:gap-[5vw]">
+      <!-- Logo Section -->
+      <div class="logo">
+        <a href="/"><img src="assets/logo.png" alt="Logo" class="w-[120px] sm:w-[150px] h-auto"></a>
+      </div>
+    
+      <!-- Hamburger Icon for Mobile -->
+      <button id="menu-toggle" class="lg:hidden text-2xl">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+          <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+        </svg>
+      </button>
+    
+      <!-- Sidebar Menu -->
+      <nav
+        id="menu"
+        class="fixed top-0 left-0 h-full w-[300px] bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg flex flex-col items-start p-6"
+      >
+        <!-- Close Button -->
+        <button id="menu-close" class="self-end text-2xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+    
+        <!-- Logo Inside Sidebar -->
+        <div class="logo mt-6">
+          <img src="assets/logo.png" alt="Logo" class="w-[150px] h-auto">
+        </div>
+    
+        <!-- Navigation Links -->
+        <ul class="flex flex-col gap-4 mt-8 text-left w-full ">
+          <li><a href="/" class="nav-item text-lg font-medium hover:text-blue-600">Home</a></li>
+          <li><a href="/about.html" class="nav-item text-lg font-medium hover:text-blue-600">About Us</a></li>
+          <li><a href="/management.html" class="nav-item text-lg font-medium hover:text-blue-600">Management</a></li>
+          <li><a href="/admission.html" class="nav-item text-lg font-medium hover:text-blue-600">Admission</a></li>
+          <li><a href="/blogs.html" class="nav-item text-lg font-medium hover:text-blue-600">Blog</a></li>
+          <li><a href="/gallery.html" class="nav-item text-lg font-medium hover:text-blue-600">Gallery</a></li>
+          <li><a href="/contact-us.html" class="nav-item text-lg font-medium hover:text-blue-600">Contact Us</a></li>
+        </ul>
+    
+        <!-- Get a Quote Button -->
+        <a href="/contact-us.html" class="mt-auto w-full">
+          <button
+            class="w-full py-2 bg-[#0F0F78] text-white font-bold rounded hover:bg-[#1a1aa8] transition-colors duration-300"
+          >
+            Get A Quote
+          </button>
+        </a>
+      </nav>
+
+      <nav class="hidden lg:block ">
+        <ul class="flex list-none m-0 p-0 gap-[30px] px-8 ">
+          <li><a href="/" class="nav-item active text-[1.3vw]  font-bold">Home</a></li>
+          <li><a href="/about.html" class="nav-item text-[1.3vw] font-bold">About Us</a></li>
+          <li><a href="/management.html" class="nav-item text-[1.3vw] font-bold">Management</a></li>
+          <li><a href="/admission.html" class="nav-item text-[1.3vw] font-bold">Admission</a></li>
+          <li><a href="/blogs.html" class="nav-item text-[1.3vw] font-bold">Blog</a></li>
+          <li><a href="/gallery.html" class="nav-item text-[1.3vw] font-bold">Gallery</a></li>
+          <li><a href="/contact-us.html" class="nav-item text-[1.3vw] font-bold">Contact Us</a></li>
+        </ul>
+      </nav>
+    
+      <!-- Button Section -->
+      <a class="hidden lg:block" href="/contact-us.html">
+      <button class="action-button px-[35px] py-[14px] bg-[#0F0F78] text-white font-[Cabin] text-[18px] font-bold rounded-[10px] hover:bg-[#1a1aa8] transition-colors duration-300">
+        Get A Quote
+      </button>
+      </a>
+    </div>
+    </header>
